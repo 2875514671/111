@@ -3,7 +3,7 @@
 
 import urllib.request
 from bs4 import BeautifulSoup
-import re
+
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/70.0.3538.110 Safari/537.36"}
@@ -30,7 +30,7 @@ def parse_html(html):
         print(movies_pic)
         urllib.request.urlretrieve(
             movies_pic,
-            r"E:\Jetbrains\PycharmProjects\Reptile\Reptile\DouBanTop250\\" + movie_name + '.jpg')
+            r"E:\Jetbrains\PycharmProjects\Reptile\Reptile\DouBanTop250\picture\\" + movie_name + '.jpg')
 
 
 def main():
