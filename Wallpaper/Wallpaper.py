@@ -18,6 +18,7 @@ def request_wallpaper(url):
 
 def save_to_document(urls):
     imgs = (json.loads(urls))['url']
+    # 返回的url链接加密，不知道怎么破解，有时间再说
     names = (json.loads(urls))['works_name']
     cop = re.compile("[^\u4e00-\u9fa5^a-z^A-Z^0-9]")
     n = re.sub(r"[A-Za-z0-9\!\%\[\]\,\。]", "", names)
