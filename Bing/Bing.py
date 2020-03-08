@@ -27,7 +27,8 @@ def save_to_document(urls):
     name = cop.sub('', n)
     print(name)
     # 文件保存地址
-    root = r"E:\JetBrains\PyCharmProject\Reptile\Bing\Bing"
+    root = r"/home/ysk/PycharmProjects/Reptile/Bing/Picture"
+    # root = r"E:\JetBrains\PyCharmProject\Reptile\Bing\Bing"
 
     img_name = name + '.jpg'
     if not os.path.exists(img_name):
