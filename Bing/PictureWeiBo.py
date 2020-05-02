@@ -17,7 +17,8 @@ def request_wallpaper(url):
 
 def ImgContent(urls):
     uri = 'https://cn.bing.com'
-    img = requests.get(uri + urls['url'])
+    # 2020.05.02 添加 verify=False 取消 SSL验证
+    img = requests.get(uri + urls['url'], verify=False)
     return img.content  # 返回图片二进制
 
 
