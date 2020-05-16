@@ -3,6 +3,9 @@
 
 import requests
 import json
+# 20200517添加如下两行代码，解决控制台报错提示
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def request_wallpaper(url):
