@@ -1,5 +1,7 @@
 # —*— coding: utf-8 —*—
-
+"""
+爬取微博图片与一言古诗词，自动发微博
+"""
 
 import requests
 import json
