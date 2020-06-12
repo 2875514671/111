@@ -33,7 +33,7 @@ def save_to_document(urls):
         2020-06-12 添加 headers 解决图片下载失败
         根据请求图片地址发现抱错{"code":"40310014","msg":"invalid Referer header"}，
         参照大佬的描述 https://www.jianshu.com/p/46c127a699f7
-        请求头中添加 Referer，解决此问题
+        请求头中添加 Referer，解决此问题 
         """
         # 2020-06-12 根据请求图片地址发现抱错{"code":"40310014","msg":"invalid Referer header"}，请求头中添加 Referer
         headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
