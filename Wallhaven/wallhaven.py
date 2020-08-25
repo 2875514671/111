@@ -14,6 +14,7 @@ def request_wallpaper(url):
         return None
 
 
+# BeautifulSoup解析
 def html_href(html):
     soup = BeautifulSoup(html, 'html.parser')
     imgs = soup.find_all('img')
@@ -27,6 +28,7 @@ def html_href(html):
     return get_imgs
 
 
+# 保存壁纸
 def save_imgs(imgs):
     headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                              "Chrome/83.0.4103.97 Safari/537.36 ",
