@@ -32,7 +32,6 @@ def save_imgs(imgs):
                              "Chrome/83.0.4103.97 Safari/537.36 ",
                "Referer": "https://wallhaven.cc"
                }
-
     for img in imgs:
         img_name = img[-10:]
         if not os.path.exists(img_name):
